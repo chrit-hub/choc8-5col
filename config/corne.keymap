@@ -19,7 +19,7 @@
   &kp Q  &kp W  &kp F       &kp P  &kp G        &kp J          &kp I  &kp U       &kp Y              &kp N
   &kp A  &kp R  &kp S       &kp T  &kp D        &kp H          &kp N  &kp E       &kp I              &kp O
   &kp Z  &kp X  &kp C       &kp V  &kp B        &kp K          &kp M  &kp COMMA   &kp RIGHT_COMMAND  &kp GRAVE
-                &kp LSHIFT  &mo 1  &kp SPACE    &kp BACKSPACE  &to 2  &kp RETURN
+                &kp LSHIFT  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RETURN
             >;
         };
 
