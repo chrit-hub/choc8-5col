@@ -52,6 +52,202 @@
 
             label = "ABRIR_PREGUNTA";
         };
+
+        abrir_exclamacion: abrir_exclamacion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(A) &kp N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ABRIR_EXCLAMACION";
+        };
+
+        grados: grados {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(B) &kp LS(A)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "GRADOS";
+        };
+
+        enye_mayus: enye_mayus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(D) &kp N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ENYE_MAYUS";
+        };
+
+        a_chiquita: a_chiquita {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(A) &kp LS(A)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "A_CHIQUITA";
+        };
+
+        comilla_bonita_inicial: comilla_bonita_inicial {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N1 &kp LS(C)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "COMILLA_BONITA_INICIAL";
+        };
+
+        comilla_bonita_final: comilla_bonita_final {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N1 &kp LS(D)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "COMILLA_BONITA_FINAL";
+        };
+
+        tres_puntos: tres_puntos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N2 &kp N6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TRES_PUNTOS";
+        };
+
+        guion_largo: guion_largo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N0 &kp N1 &kp N3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "GUION_LARGO";
+        };
+
+        mu: mu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(B) &kp N5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "MU";
+        };
+
+        eszett: eszett {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(D) &kp LS(F)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ESZETT";
+        };
+
+        alpha: alpha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N3 &kp N7 &kp LS(A)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALPHA";
+        };
+
+        beta: beta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N3 &kp LS(B) &kp N2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "BETA";
+        };
+
+        igual_o_mayor: igual_o_mayor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N2 &kp N6 &kp N5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "IGUAL_O_MAYOR";
+        };
+
+        igual_o_menor: igual_o_menor {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N2 &kp N2 &kp N6 &kp N4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "IGUAL_O_MENOR";
+        };
     };
 
     keymap {
@@ -60,28 +256,28 @@
         default_layer {
             display-name = "Base";
             bindings = <
-  &kp Q  &kp W  &kp F             &kp P  &kp G            &kp J      &kp L  &kp U       &kp Y            &enye
-  &kp A  &kp R  &kp S             &kp T  &kp D            &kp H      &kp N  &kp E       &kp I            &kp O
-  &kp Z  &kp X  &kp C             &kp V  &kp B            &kp K      &kp M  &kp COMMA   &kp RIGHT_SHIFT  &acento
-                &kp LEFT_COMMAND  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RETURN
+  &kp Q  &kp W  &kp F             &kp P  &kp G        &kp J          &kp L  &kp U       &kp Y            &enye
+  &kp A  &kp R  &kp S             &kp T  &kp D        &kp H          &kp N  &kp E       &kp I            &kp O
+  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp K          &kp M  &kp COMMA   &kp RIGHT_SHIFT  &acento
+                &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RETURN
             >;
         };
 
         layer_1 {
             bindings = <
-  &kp TAB  &kp ESC  &kp SINGLE_QUOTE  &kp QUESTION  &trans    &kp C_REWIND      &kp C_PLAY_PAUSE   &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
-  &trans   &trans   &trans            &trans        &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &trans             &trans
-  &trans   &trans   &trans            &trans        &trans    &trans            &trans             &kp SEMI    &kp SEMICOLON      &trans
-                    &trans            &trans        &trans    &trans            &kp RIGHT_ALT      &trans
+  &kp TAB      &kp ESC  &kp SINGLE_QUOTE  &abrir_pregunta     &kp QUESTION    &kp C_REWIND       &kp C_PLAY_PAUSE   &kp C_NEXT               &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
+  &enye_mayus  &trans   &eszett           &abrir_exclamacion  &trans          &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &comilla_bonita_inicial  &comilla_bonita_final  &trans
+  &trans       &trans   &trans            &trans              &trans          &kp RIGHT_CONTROL  &tres_puntos       &kp SEMI                 &guion_largo           &trans
+                        &trans            &trans              &trans          &trans             &kp RIGHT_ALT      &trans
             >;
         };
 
         num_nav {
             bindings = <
-  &caps_word        &trans         &trans     &trans  &kp EQUAL    &kp N7  &kp N8  &kp N9  &kp N0    &kp ASTERISK
-  &trans            &kp LEFT       &kp RIGHT  &kp UP  &kp DOWN     &kp N4  &kp N5  &kp N6  &kp FSLH  &kp PLUS
-  &kp GREATER_THAN  &kp BACKSLASH  &trans     &trans  &trans       &kp N1  &kp N2  &kp N3  &kp DOT   &kp MINUS
-                                   &trans     &trans  &trans       &trans  &trans  &trans
+  &caps_word        &a_chiquita    &alpha          &beta           &kp EQUAL    &kp N7  &kp N8  &kp N9  &kp N0    &kp ASTERISK
+  &grados           &kp LEFT       &kp RIGHT       &kp UP          &kp DOWN     &kp N4  &kp N5  &kp N6  &kp FSLH  &kp PLUS
+  &kp GREATER_THAN  &kp BACKSLASH  &igual_o_menor  &igual_o_mayor  &mu          &kp N1  &kp N2  &kp N3  &kp DOT   &kp MINUS
+                                   &trans          &trans          &trans       &trans  &trans  &trans
             >;
         };
     };
