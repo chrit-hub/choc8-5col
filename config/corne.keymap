@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
@@ -17,7 +16,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt LEFT_ALT>,
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp N0 &kp N0 &kp LS(F) &kp N1>,
                 <&macro_release>,
@@ -31,7 +30,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt LEFT_ALT>,
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp N0 &kp N0 &kp LS(B) &kp N4>,
                 <&macro_release>,
@@ -45,7 +44,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt LEFT_ALT>,
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp N0 &kp N0 &kp LS(B) &kp LS(F)>,
                 <&macro_release>,
@@ -61,10 +60,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-  &kp Q  &kp W  &kp F             &kp P  &kp G        &kp J          &kp L  &kp U       &kp Y            &enye
-  &kp A  &kp R  &kp S             &kp T  &kp D        &kp H          &kp N  &kp E       &kp I            &kp O
-  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp K          &kp M  &kp COMMA   &kp RIGHT_SHIFT  &acento
-                &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RETURN
+  &kp Q  &kp W  &kp F             &kp P  &kp G            &kp J      &kp L  &kp U       &kp Y            &enye
+  &kp A  &kp R  &kp S             &kp T  &kp D            &kp H      &kp N  &kp E       &kp I            &kp O
+  &kp Z  &kp X  &kp C             &kp V  &kp B            &kp K      &kp M  &kp COMMA   &kp RIGHT_SHIFT  &acento
+                &kp LEFT_COMMAND  &mo 1  &kp BACKSPACE    &kp SPACE  &mo 2  &kp RETURN
             >;
         };
 
