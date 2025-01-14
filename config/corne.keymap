@@ -15,8 +15,43 @@
         enye: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt LEFT_ALT &kp N0 &kp N0 &kp F &kp N1>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(F) &kp N1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
             label = "NEW_MACRO";
+        };
+
+        acento: acento {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(B) &kp N4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ACENTO";
+        };
+
+        abrir_pregunta: abrir_pregunta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_ALT>,
+                <&macro_tap>,
+                <&kp N0 &kp N0 &kp LS(B) &kp LS(F)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ABRIR_PREGUNTA";
         };
     };
 
@@ -26,10 +61,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-  &kp Q  &kp W  &kp F       &kp P  &kp G        &kp J          &kp L  &kp U       &kp Y              &enye
-  &kp A  &kp R  &kp S       &kp T  &kp D        &kp H          &kp N  &kp E       &kp I              &kp O
-  &kp Z  &kp X  &kp C       &kp V  &kp B        &kp K          &kp M  &kp COMMA   &kp RIGHT_COMMAND  &kp TILDE
-                &kp LSHIFT  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RETURN
+  &kp Q  &kp W  &kp F             &kp P  &kp G        &kp J          &kp L  &kp U       &kp Y            &enye
+  &kp A  &kp R  &kp S             &kp T  &kp D        &kp H          &kp N  &kp E       &kp I            &kp O
+  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp K          &kp M  &kp COMMA   &kp RIGHT_SHIFT  &acento
+                &kp LEFT_COMMAND  &mo 1  &kp SPACE    &kp BACKSPACE  &mo 2  &kp RETURN
             >;
         };
 
